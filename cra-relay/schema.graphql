@@ -1,0 +1,12 @@
+  type Query {
+    pokemon: Pokemon!
+  }
+
+  type Pokemon {
+    name: String!
+    type: String!
+  }
+
+  type Mutation {
+    addPokemon(name: String!, type: String!): ID!
+  }
